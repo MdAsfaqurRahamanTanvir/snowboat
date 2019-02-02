@@ -1,0 +1,248 @@
+header{
+    background-color: #000000;
+    min-height: 107px;
+}
+
+.header_nav{
+    padding-top: 13px;
+}
+
+.custom_ul li a{
+    color: white !important;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header_form
+{
+    color: white;
+   
+}
+.header_form i{
+    padding: 0px 10px;
+}
+
+.custom_toggler{
+    border: 1px solid white;
+    
+}
+
+.custom_icon{
+   color: white !important;
+}
+
+/*header end    */
+
+
+
+.header_img{
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 640px;
+}
+
+
+.header_caption{
+    color: white;
+    width: 47%;
+   margin: 205px auto;
+}
+
+.header_caption h1{
+    text-transform: uppercase;
+    font-size: 88px;
+    font-weight: bold;
+}
+
+.custom_btn{
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    float: right;
+/*        margin-right: 40px;*/
+}
+
+/*heqader end*/
+
+/*slider start*/
+
+
+@media (min-width: 320px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+    
+    .custm_icon{
+        color: black;
+        font-size: 250px;
+    }
+    
+    .slider_bg{
+        padding: 80px 30px;
+        background-color: white;
+    }
+    
+    .panel{
+        background-color: white !important;
+    }
+    
+   
+
+}
+
+.slider{
+    background-color: white;
+}
+
+.slider_header{
+    text-align: center;
+    color: black;
+    padding: 50px 0px;
+}
+
+.slider_last{
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+ /* Bootstrap Lightbox using Modal */
+
+/*
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+*/
+
+
+/*achivement start */
+
+.achivement{
+    background-image: url(../images/achivement.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 950px;
+}
+
+.achiv_features{
+    color: white;
+    margin: 270px 0px;
+}
+
+
+/*achivement end */
+
+/*Features start */
+
+.single_card{
+    margin-bottom:100px;
+}
+
+.card-title{
+    font-size: 15px;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-color: black;
+    color: white;
+/*    min-height: 400px;*/
+   
+}
+
+.ml{
+    float: left;
+     color: white;
+}
+
+.mr{
+    float: right;
+}
+
+.single_footer{
+     padding-top: 40px;
+    padding-bottom: 120px;
+    overflow: hidden
+}
+
+.single_footer h1{
+    font-size: 28px;
+}
+
+.custom_icon{
+    padding: 10px 10px;
+}
+
+
